@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# TypeScript Turing Machine Emulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web react application and remake of [Python Turing Machine Emulator](https://github.com/heavencaterpillar/pyturingmachine). Project is based on the mathematical concept of [Turing machine](https://en.wikipedia.org/wiki/Turing_machine).
 
 ## Available Scripts
 
