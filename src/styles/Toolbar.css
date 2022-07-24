@@ -1,0 +1,31 @@
+.toolBar {
+    /*height: 6vh;*/
+    height: 55px;
+    background-color: rgb(49,49,49);
+}
+
+.buttonWrapper {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 80px;
+    align-content: center;
+    text-align: center;
+    /*width: 30px;*/
+}
+
+.buttonWrapper:hover {
+    background-color: rgb(45,45,45);
+}
+
+.toolsBlock {
+    margin-right: 60px;
+}
+
+.toolBarButton {
+    margin: 0 auto;
+    height: 66%;
+    padding: 10px;
+    /*margin-right: 20px;*/
+    transition: background-color 0.2s linear;
+}

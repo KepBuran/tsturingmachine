@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: rgb(37,37,38);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(37,37,38);
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+
+
+
+
+
+

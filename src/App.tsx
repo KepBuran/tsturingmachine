@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import './styles/App.css';
+import MenuComponent from "./components/menu/MenuComponent";
+import ToolbarComponent from "./components/toolbar/ToolbarComponent";
+import TapeComponent from "./components/tape/TapeComponent";
+import {Tape} from "./models/tape/Tape";
+import {TapeFunctions} from "./models/tape/TapeFunctions";
+import {Machine} from "./models/machine/Machine";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [tape, setTape] = useState(new Tape());
+    const [savedTape, setSavedTape] = useState(new Tape());
+    const [machine, setMachine] = useState(new Machine());
+
+
+    useEffect(() => {
+        initApp()
+    }, [])
+
+    function initApp() {
+        setTape(TapeFunctions.createEmptyTape());
+        setSavedTape(TapeFunctions.createEmptyTape());
+        setMachine(new Machine());
+    }
+
+    return (
+        <div className="App">
+            <MenuComponent tape={tape} setTape={setTape} savedTape={savedTape} setSavedTape={setSavedTape}  machine={machine} setMachine={setMachine}/>
+            <ToolbarComponent tape={tape} setTape={setTape} savedTape={savedTape} setSavedTape={setSavedTape}  machine={machine} setMachine={setMachine}></ToolbarComponent>
+            <TapeComponent tape={tape} setTape={setTape}></TapeComponent>
+        </div>
+    );
 }
 
 export default App;

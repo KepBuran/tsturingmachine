@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import path from "path";
+
+// app.get("/*", function (req: any, res: any) {
+//     res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+// })
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -1,0 +1,72 @@
+.mainMenu {
+    font-family: Noto Sans;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255,156,255);
+    border: 1px black;
+    height: 46px;
+    width: 100vw;
+}
+
+
+ul li ul {
+    min-width: 5rem;
+    display: none;
+}
+
+
+.menuElement{
+    float: left;
+    display: block;
+    position: relative;
+    transition: background-color 0.2s linear;
+    font-size: 24px;
+    padding: 7px 10px 6px 10px;
+    text-align: center;
+    height: 100%;
+    color: rgb(255,156,255);
+}
+
+.menuElement:hover{
+    background-color: rgb(40,40,40);
+}
+
+.subMenu {
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    left: 0;
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+.subMenu li{
+    padding-left: 20px;
+    text-align: left;
+    background-color: rgb(45, 45, 45);
+}
+
+.fileSubMenu li{
+    width: 150%;
+}
+
+.speedSubMenu li{
+    width: 150%;
+}
+
+.decoderSubMenu li{
+    width: 160%;
+}
+
+.subMenu li:hover{
+    background-color: rgb(40,40,40);
+    cursor: pointer;
+}
+
+ul li:hover > ul, .menuElement:hover li{
+    display: block;
+}
+
+.fileInput {
+    display: none;
+}
+
